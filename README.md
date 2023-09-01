@@ -102,3 +102,53 @@ Quando pesquiso o imóvel considerando características de cidade, valor, quanti
 Então é apresentado resultado de busca considerando os filtros informados.
 
 ## 2 - Automação de Testes
+
+
+## Documentação
+
+**  Bibliotecas e Linguagens**
+
+    * Maven 3.9.4 [Download](https://maven.apache.org/download.cgi)
+    * JDK 20 [Download](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
+    * Selenium WebDriver 4.11.0
+    * RestAssured 5.3.1
+    * Java
+
+** Patterns e Conceitos**
+
+    * SOLID;
+    * Singleton;
+    * PageObject;
+    * Factory.
+
+** Configuração JDK**
+
+    * Realizar o download da versão do JDK 20 (versão que o projeto foi construído, caso utilize versões anteriores o projeto pode não funcionar corretamente)
+    * Acessar variáveis de ambiente da máquina;
+    * Criar variável "JAVA_HOME" na seção "Variáveis de Sistema"
+        * Nome da variável: "JAVA_HOME";
+        * Valor da variável: C:\Program Files\Java\jdk-20 (O caminho pode variar caso o download da versão x86 tenha sido realizada. Necessário observar a arquitetura da CPU)
+    * Após criação da variável "JAVA_HOME" acessar a variável "PATH" da seção "Variáveis de Sistema"
+    * Acrescentar um novo valor seguindo o padrão ao lado: %JAVA_HOME%\bin (Apontamento necessário para identificação da JVM no sistema operacional)
+
+**Configuração MAVEN**
+
+    Para apresentar o passo à passo da configuração do maven, estou considerando a utilização da versão 3.9.4
+
+    * Realizar o download da versão do MAVEN especifica (ou inferior);
+        * Observação: Realizar o download do "Binary zip archive".
+    * Extrair arquivo dentro do diretório raiz da máquina (C:);
+    * Criar variável "MAVEN_HOME" na seção "Variáveis de Sistema"
+        * Nome da variável: "MAVEN_HOME";
+        * Valor da variável: C:\apache-maven-3.9.4 (O nome da pasta pode variar de acordo com a extração realizada e versão do maven que foi realizado download) 
+    * Após criação da variável "MAVEN_HOME" acessar a variável "PATH" da seção "Variáveis de Sistema"
+    * Acrescentar um novo valor seguindo o padrão ao lado: %MAVEN_HOME%\bin (Apontamento necessário para identificação dos arquivos binários do maven)
+ 
+**Validação da instalação**
+
+Para validar se a instalação/configuração foi realizada com sucesso, abrir o CMD como administrador e digitar os comandos abaixo:
+    * Validação da JVM: java --version
+        * Caso seja apresentado a versão do "Server VM" então a configuração foi realizada corretamente.
+    * Validação do MAVEN: mvn --version
+        * Caso seja apresentado a versão do "Apache Maven" então configuração foi realizada com sucesso.
+
