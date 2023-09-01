@@ -106,7 +106,7 @@ Então é apresentado resultado de busca considerando os filtros informados.
 
 ## Documentação
 
-**  Bibliotecas e Linguagens**
+**Bibliotecas e Linguagens**
 
     * Maven 3.9.4 [Download](https://maven.apache.org/download.cgi)
     * JDK 20 [Download](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
@@ -114,14 +114,14 @@ Então é apresentado resultado de busca considerando os filtros informados.
     * RestAssured 5.3.1
     * Java
 
-** Patterns e Conceitos**
+**Patterns e Conceitos**
 
     * SOLID;
     * Singleton;
     * PageObject;
     * Factory.
 
-** Configuração JDK**
+**Configuração JDK**
 
     * Realizar o download da versão do JDK 20 (versão que o projeto foi construído, caso utilize versões anteriores o projeto pode não funcionar corretamente)
     * Acessar variáveis de ambiente da máquina;
@@ -147,6 +147,7 @@ Então é apresentado resultado de busca considerando os filtros informados.
 **Validação da instalação**
 
 Para validar se a instalação/configuração foi realizada com sucesso, abrir o CMD como administrador e digitar os comandos abaixo:
+
     * Validação da JVM: java --version
         * Caso seja apresentado a versão do "Server VM" então a configuração foi realizada corretamente.
     * Validação do MAVEN: mvn --version
