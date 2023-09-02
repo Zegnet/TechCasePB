@@ -1,6 +1,6 @@
-package Attributes;
+package Web.Attributes;
 
-import engine.Driver;
+import engine.Web.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -20,5 +20,11 @@ public abstract class AttributesHome {
     protected WebElement alertButton;
     @FindBy(xpath = "//a[@class=\"button success\"]")
     protected WebElement successButton;
+    @FindBys(@FindBy(xpath = "//tbody/tr"))
+    protected List<WebElement> rows;
+    @FindBys(@FindBy(xpath = "//*[contains(text(),'edit')]"))
+    protected List<WebElement> editLinks;
+    @FindBys(@FindBy(xpath = "//*[contains(text(),'delete')]"))
+    protected List<WebElement> deleteLinks;
 }
 

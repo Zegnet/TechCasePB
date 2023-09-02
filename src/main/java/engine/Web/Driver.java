@@ -1,5 +1,6 @@
-package engine;
+package engine.Web;
 
+import engine.DriverBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,8 +45,14 @@ public class Driver implements DriverBase {
 
     @Override
     public void close() {
-        browser.quit();
-        driver = null;
+        try{
+            Thread.sleep(3000);
+            browser.quit();
+            driver = null;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 
     @Override
