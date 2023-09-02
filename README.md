@@ -4,7 +4,7 @@
 O projeto apresentado tem como objetivo solucionar os itens propostos dentro do case técnico.
 
 
-## Autores
+## Autor
 
 - [@Zegnet](https://www.github.com/Zegnet)
 
