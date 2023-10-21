@@ -169,7 +169,7 @@ Após realizar a execução do teste automatizado é possível visualizar o ECT 
 
 **Estrutura do Projeto**
 
-Para o desenvolvimento do case técnico foi utilizada uma arquitetura componentizada juntamente com a construção de um mini framework para diminuição da complexidade ciclomática do código garantindo assim, uma fácil manutenabilidade das **pages**, **atributos** e **requests das apis**. Abaixo segue um desenho demonstrando a divisão de pastas e arquitetura:
+Para o desenvolvimento do case técnico foi utilizada uma arquitetura componentizada juntamente com a construção de um mini framework para diminuição da complexidade ciclomática do código garantindo assim, uma fácil manutenabilidade das **páginas**, **atributos** e **requests das APIs**. Abaixo segue um desenho demonstrando a divisão de pastas e arquitetura:
 
 ```
 src
